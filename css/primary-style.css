@@ -134,7 +134,7 @@ nav a{
 @media (max-width: 400px) {
   
     .bottom-nav a{
-        padding: 0 var(--l);
+        padding: 0 1.8em;
     }
 
     .top-nav a{

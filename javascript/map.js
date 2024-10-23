@@ -73,11 +73,11 @@ async function initMap() {
 
   const artPins = [
   {
-    image: "/assets/images/route-icon-temp.png",
+    image: "/assets/images/nga-kete-00-thumb.png",
     description: "Ngā Kete",
     position: {
-      lat: -45.86644584864054, 
-      lng: 170.51879383928727
+      lat: -45.865920877718146, 
+      lng: 170.51838725593004
     },
   },
   {
@@ -117,7 +117,7 @@ async function initMap() {
     name: "Ngā Kete",
     artist: "Michel Tuffery",
     medium: "Sandcast Bronze, 2018",
-    image: "/assets/images/route-icon-temp.png",
+    image: "/assets/images/nga-kete-00-thumb.png",
     page: "/pages/artwork-pages/nga-kete.html",
     position: {
       lat: -45.86644584864054, 
