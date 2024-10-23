@@ -1,0 +1,145 @@
+/*----- Font Imports -----*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://use.typekit.net/jvc7icv.css");    
+
+/*----- Theme -----*/
+:root{
+    /*----- Fonts -----*/
+    --heading-font: "ivypresto-headline", serif; 
+    --body-font: "Raleway", sans-serif;
+
+    /*----- Sizes -----*/
+    --xxxs: 0.2em;
+    --xxs: 0.4em;
+    --xs: 0.6em;
+    --s: 1em;
+    --m: 1.6em;
+    --l: 2.6em;
+    --xl: 4.2em;
+    --xxl: 6.8em;
+    --xxxl: 11em;
+
+    /*----- Colors -----*/
+    --dark-one: #1A1A1A;
+    --dark-two: #2A2A2A;
+    --dark-three: #3A3A3A;
+    --dark-four: #5A5A5A;
+    --dark-five: #6A6A6A;
+    --dark-six: #717171;
+    --dark-seven: #8A8A8A;
+    --light-seven: #A3A3A3;
+    --light-six: #AAAAAA;
+    --light-five: #BABABA;
+    --light-four: #C2C2C2;
+    --light-three: #D9D9D9;
+    --light-two: #EAEAEA;
+    --light-one: #FAFAFA;
+}
+
+/*----- Basic Style -----*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-one);
+    color: var(--light-two);
+    margin: 0px;
+}
+
+main{
+    height: 90vh;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#map{
+    height: 100%;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    font-size: var(--xl);
+    letter-spacing: 0.04em;
+}
+
+p{
+    font-family: var(--body-font);
+    font-size: var(--m);
+}
+
+a{
+   text-decoration: none; 
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+    max-width: 1200px;
+    height: 5vh;
+    margin: auto;
+    background-color: var(--dark-three);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+    padding: var(--s);
+}
+
+nav img{
+    height: 2vh;
+}
+
+.top-nav{
+    position: sticky;
+    top: 0;
+}
+
+.bottom-nav{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    justify-content: center;
+    transform: translate(-50%, 0);
+}
+
+nav a{
+    color: var(--light-three);
+}
+
+.bottom-nav a{
+    padding: 0 var(--xl);
+}
+
+.map-icon{
+    border-left: 1px solid var(--dark-seven);
+    border-right: 1px solid var(--dark-seven);
+}
+
+@media (max-height: 1250px) {
+    nav{
+        height: 6vh;
+        font-size: 3vh;
+    }
+    .bottom-nav a{
+        padding: 0 var(--l);
+    }
+    
+}
+
+@media (max-width: 400px) {
+  
+    .bottom-nav a{
+        padding: 0 var(--l);
+    }
+
+    .top-nav a{
+        margin: -3px var(--s);
+        padding: 0;
+    }
+}
+

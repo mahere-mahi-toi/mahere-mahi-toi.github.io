@@ -1,0 +1,141 @@
+/*----- Basic Style -----*/
+body{
+    display: block;
+    overflow-x: hidden;
+    padding-bottom: var(--xxl);
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    padding: var(--m);
+}
+
+/*----- Heading -----*/
+#page-title{
+    width: 90%;
+    margin: var(--s) auto var(--s);
+    text-wrap: wrap;
+    text-align: center;
+}
+
+/*----- Search Section -----*/
+#search {
+    width: 90%;
+    height: 4vh;
+    min-height: var(--l);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-three);
+    border-radius: 15px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+}
+
+#search button{
+    background-color: transparent;
+    color: var(--light-five);
+    border-style: none;
+    font-size: 100%;
+}
+
+#search input{
+    background-color: transparent;
+    color: var(--light-five);
+    border-style: none;
+    font-size: var(--s);
+    padding: var(--xxs);
+    border-left: 1px solid var(--dark-seven);
+    border-right: 1px solid var(--dark-seven);
+}
+
+#search input:focus{
+    color: var(--light-one);
+    font-family: var(--body-font);
+    border: 0px none;
+    border-left: 1px solid var(--dark-seven);
+    border-right: 1px solid var(--dark-seven);
+    outline: 0;
+}
+
+
+/*----- Artwork Cards -----*/
+.art-card button{
+    width: 90%;
+    height: 12vh;
+    min-height: var(--xxl);
+    margin: var(--l) auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--dark-three);
+    border-radius: 20px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+    border-style: none;
+    text-align: left;
+    overflow: hidden;
+}
+
+.art-card button:hover{
+    cursor: pointer;
+}
+
+.art-card img{
+    width: 100%;
+}
+
+.art-card .card-text{
+    width: 100%;
+    padding: var(--s);
+}
+
+.art-card h3{
+    font-size: var(--l);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--light-one); 
+    margin: 0;
+}
+
+.art-card p{
+    margin: 0;
+    color: var(--light-three);
+    font-size: var(--m);
+    font-weight: 600;
+}
+
+.art-card small{
+    font-family: var(--body-font);
+    margin: 0;
+    color: var(--light-five);
+    font-size: var(--s);
+}
+
+.art-card .arrow{
+    width: 50%;
+}
+
+
+@media (max-height: 1250px) {
+    #page-title{
+        margin: var(--xs) auto;
+    }
+    #search{
+        border-radius: 10px;
+    }
+
+    .art-card button{
+        height: 16vh;
+    }
+
+    .art-card img{
+        height: 16vh;
+    }
+    
+}

@@ -1,0 +1,321 @@
+/*----- Basic Style -----*/
+body{
+    display: block;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*----- Heading -----*/
+#page-title{
+    width: 90%;
+    margin: var(--s) auto var(--s);
+    text-wrap: wrap;
+    text-align: center;
+}
+
+/*----- Search Section -----*/
+#search {
+    width: 85%;
+    height: 4vh;
+    min-height: var(--l);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-three);
+    border-radius: 15px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+}
+
+#search button{
+    background-color: transparent;
+    color: var(--light-five);
+    border-style: none;
+    font-size: 100%;
+}
+
+#search input{
+    background-color: transparent;
+    color: var(--light-five);
+    border-style: none;
+    font-family: var(--body-font);
+    font-size: var(--s);
+    padding: var(--xxs) var(--m);
+    border-left: 1px solid var(--dark-seven);
+    border-right: 1px solid var(--dark-seven);
+}
+
+#search input:focus{
+    color: var(--light-one);
+    font-family: var(--body-font);
+    border: 0px none;
+    border-left: 1px solid var(--dark-seven);
+    border-right: 1px solid var(--dark-seven);
+    outline: 0;
+}
+
+/*----- Route Section -----*/
+#routes{
+    width: 100%;
+    margin: var(--l) auto;
+}
+
+/*--- Route Carousel ---*/
+#route-carousel{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    margin-left: var(--l);
+    padding-bottom: var(--s);
+    scrollbar-color: var(--dark-six) var(--dark-two);
+    scrollbar-width: thin;
+}
+
+#route-carousel .route-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--xxs) var(--m);
+    margin-right: var(--m);
+    height: 16vh;
+    min-height: 12em;
+    background-color: var(--dark-three);
+    border-radius: 25px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+}
+
+.route-card img{
+    border-radius: 100%;
+    width: 90%;
+    margin-bottom: var(--xxs);
+}
+
+.route-card div{
+    text-align: center;
+    
+}
+
+.route-card h4{
+    color: var(--light-one);
+    font-size: var(--m);
+    font-weight: 400;
+    margin: 0;
+}
+
+.route-card p{
+    margin: 0;
+    font-size: 14pt;
+    color: var(--light-three);
+}
+
+.route-card small{
+    margin: 0;
+    font-size: 10pt;
+    font-weight: 200;
+    color: var(--light-five);
+}
+
+/*--- Route Button ---*/
+#routes button{
+    width: 85%;
+    height: 4vh;
+    min-height: var(--xl);
+    margin: var(--m) auto;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--dark-three);
+    border-radius: 15px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+    border-style: none;
+    text-align: left;
+}
+
+#routes h3{
+    width: 100%;
+    font-size: var(--m);
+    font-weight: 400;
+    border-right: 1px solid var(--dark-seven);
+    padding-left: var(--xs);
+    color: var(--light-one);
+}
+
+#routes button img{
+    width: 50%;
+    max-width: var(--m);
+}
+
+/*----- Gallery Section -----*/
+#gallery-button button{
+    width: 85%;
+    height: 12vh;
+    min-height: var(--xxl);
+    margin: var(--m) auto auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--dark-three);
+    border-radius: 20px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+    border-style: none;
+    text-align: left;
+    overflow: hidden;
+}
+
+#gallery-button button:hover{
+    cursor: pointer;
+}
+
+#gallery-button .bg-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    background-image: url(/assets/images/gallery-image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gallery-button .bg-blur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    backdrop-filter: blur(2px);
+    background-color: #00000083;
+}
+
+#gallery-button h2{
+    font-size: var(--xl);
+    color: var(--light-one); 
+}
+
+#gallery-button img{
+    width: 50%;
+}
+
+/*----- Artists Section -----*/
+#artists{
+    width: 100%;
+    margin: var(--xxl) auto;
+}
+
+/*--- Artist Carousel ---*/
+#artists-carousel{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    margin-left: var(--l);
+    padding-bottom: var(--s);
+    scrollbar-color: var(--dark-six) var(--dark-two);
+    scrollbar-width: thin;
+}
+
+#artists-carousel .artist-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--l) var(--m);
+    margin-right: var(--m);
+    height: 8vh;
+    width: 8vw;
+    min-width: var(--xxl);
+    min-height: var(--xxl);
+    background-color: var(--dark-three);
+    border-radius: 25px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+}
+
+.artist-card img{
+    border-radius: 100%;
+    width: 90%;
+    margin-bottom: var(--xxs);
+}
+
+.artist-card p{
+    margin: 0;
+    font-size: 14pt;
+    font-weight: 500;
+    color: var(--light-two);
+    text-align: center;
+}
+
+/*--- Route Button ---*/
+#artists button{
+    width: 85%;
+    height: 4vh;
+    min-height: var(--xl);
+    margin: var(--m) auto auto;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--dark-three);
+    border-radius: 15px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+    border-style: none;
+    text-align: left;
+}
+
+#artists h3{
+    width: 100%;
+    font-size: var(--m);
+    font-weight: 400;
+    border-right: 1px solid var(--dark-seven);
+    padding-left: var(--xs);
+    color: var(--light-one);
+}
+
+#artists button img{
+    width: 50%;
+    max-width: var(--m);
+}
+
+@media (max-height: 1250px) {
+    #page-title{
+        margin: var(--xs) auto;
+    }
+    #search{
+        border-radius: 10px;
+    }
+
+    #gallery-button button{
+        height: 16vh;
+    }
+
+    #gallery-button .bg-img{
+        height: 16vh;
+    }
+
+    #artists{
+        margin-top: var(--l);
+    }
+    
+}
+

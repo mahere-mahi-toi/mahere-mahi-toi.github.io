@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://use.typekit.net/jvc7icv.css");  
+
+/*----- Basic Style -----*/
+body{
+    display: block;
+    overflow-x: hidden;
+    padding-bottom: var(--xxl);
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*----- Art Image and Text -----*/
+.hero-img{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+.info-text{
+    width: 90%;
+    margin: auto;
+}
+
+.info-text h2{
+    font-family: var(--heading-font);
+    margin: 0;
+    font-style: italic;
+}
+
+.info-text h3{
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: var(--l);
+    font-weight: 500;
+    color: var(--light-four);
+}
+
+.info-text h4{
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: var(--m);
+    font-weight: 300;
+    color: var(--light-four);
+}
+
+/*----- Route Section -----*/
+.route-optns{
+    padding-bottom: var(--xxl);
+    margin: var(--l) auto;
+}
+
+.route-optns h3{
+    margin: var(--xxs) var(--s);
+    font-family: var(--heading-font);
+    font-size: var(--l);
+    font-weight: 400;
+    color: var(--light-one);
+}
+
+/*--- Route Carousel ---*/
+#route-carousel{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    margin-left: var(--l);
+    padding-bottom: var(--s);
+    scrollbar-color: var(--dark-six) var(--dark-two);
+    scrollbar-width: thin;
+}
+
+#route-carousel .route-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--xxs) var(--m);
+    margin-right: var(--m);
+    height: 16vh;
+    min-height: 12em;
+    background-color: var(--dark-three);
+    border-radius: 25px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+}
+
+.route-card img{
+    border-radius: 100%;
+    width: 90%;
+    margin-bottom: var(--xxs);
+}
+
+.route-card div{
+    text-align: center;
+    
+}
+
+.route-card h4{
+    color: var(--light-one);
+    font-size: var(--m);
+    font-weight: 400;
+    margin: 0;
+}
+
+.route-card p{
+    margin: 0;
+    font-size: 14pt;
+    color: var(--light-three);
+}
+
+.route-card small{
+    margin: 0;
+    font-size: 10pt;
+    font-weight: 200;
+    color: var(--light-five);
+}
+
+@media (max-height: 1250px) {
+.route-optns{
+    padding-bottom: var(--s);
+}
+}
+

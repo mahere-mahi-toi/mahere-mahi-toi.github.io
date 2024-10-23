@@ -1,0 +1,89 @@
+/* HTML marker styles */
+.art-pin {
+    background-color: var(--light-one);
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    overflow: hidden;
+  }
+
+.art-pin img{
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin: -50% ;
+}
+
+  /*----- Artwork Cards -----*/
+.art-card button{
+    width: 90%;
+    min-width: 30vw;
+    height: 12vh;
+    min-height: var(--xxl);
+    margin: var(--l) auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--dark-three);
+    border-radius: 20px;
+    box-shadow: var(--xxs) var(--xxs) var(--xxs) #000;
+    border-style: none;
+    text-align: left;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.art-card button:hover{
+    cursor: pointer;
+}
+
+.art-card img{
+    width: 100%;
+}
+
+.art-card .card-text{
+    width: 100%;
+    padding: var(--s);
+}
+
+.art-card h3{
+    font-size: var(--l);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--light-one); 
+    margin: 0;
+}
+
+.art-card p{
+    margin: 0;
+    color: var(--light-three);
+    font-size: var(--m);
+    font-weight: 600;
+}
+
+.art-card small{
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--light-five);
+    font-size: var(--s);
+}
+
+.art-card .arrow{
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .art-card button{
+        height: auto;
+        width: 100%;
+    }
+}

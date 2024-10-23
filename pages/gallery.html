@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="">
+    <title>Mahere Mahi Toi | Gallery</title>
+
+    <link rel="stylesheet" href="/css/primary-style.css">
+    <link rel="stylesheet" href="/css/gallery-style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script type="module" src="/javascript/map.js"></script>
+    <script src="/javascript/general.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <a onclick="goBack()"><img src="/assets/icons/arrow-left.svg"></a>
+      <a href=""><i class="bi bi-gear"></i></a>
+    </nav>
+
+    <main id="gallery">
+        <h1 id="page-title">Gallery</h1>
+
+        <div >
+          <form id="search">
+            <button type="submit" aria-label="Search button" ><i class="bi bi-search"></i></button>
+            <input type="text" placeholder="Search" title="Enter an artwork, artist, or route">
+            <button type="menu" aria-label="Filter button" class="filter-btn"><i class="bi bi-sliders"></i></button>
+          </form>
+        </div>
+
+        <div class="art-card">
+          <a href="/pages/artwork-pages/nga-kete.html">
+            <button type="button" aria-label="Artwork Button" title="View artwork">
+              <img src="/assets/images/gallery-image.png" alt="art hero">
+              <div class="card-text">
+                <h3>Ngā Kete</h3>
+                <p>Artist Name</p>
+                <small>Artwork Category</small>
+              </div>
+              <img src="/assets/icons/arrow-right.svg" class="arrow">
+            </button>
+          </a>
+        </div>
+
+    </main>
+
+    
+    <nav class="bottom-nav">
+      <a href=""><i class="bi bi-person-circle"></i></a>
+      <a href="/index.html" class="map-icon"><i class="bi bi-geo-alt-fill"></i></a>
+      <a href="/pages/dash.html"><i class="bi bi-menu-button"></i></a>
+  </nav>
+
+  </body>
+</html>
