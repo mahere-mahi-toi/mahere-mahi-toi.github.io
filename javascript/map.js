@@ -81,12 +81,36 @@ async function initMap() {
     },
   },
   {
-    image: "/assets/images/route-icon-temp.png",
+    image: "/assets/images/IMG_1956.JPG",
     description: "Ngā Kete",
     position: {
-      lat:-45.86614249609565, 
-      lng: 170.51854053125336
+      lat:-45.8661360611074, 
+      lng: 170.518557581899
     },
+  },
+  {
+    image: "/assets/images/IMG_1817.JPG",
+    description: "Ngā Kete",
+    position: {
+      lat:-45.86602072379577, 
+      lng:170.51943133448054
+    },
+  },
+  {
+    image: "/assets/images/IMG_1492.JPG",
+    description: "Ngā Kete",
+    position: {
+      lat:-45.866490326837, 
+      lng:170.51834146912321
+    },
+  },
+  {
+    image: "/assets/images/IMG_1443.JPG",
+    description: "Ngā Kete",
+    position: {
+      lat:-45.8666685233813, 
+      lng:170.51898274349094
+    }
   },
 ];
 
